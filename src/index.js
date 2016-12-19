@@ -2,6 +2,7 @@
 
 const path = require('path');
 const glue = require('glue');
+const handlebars = require('handlebars');
 const manifest = require('./manifest.js');
 const options = {
 	relativeTo: __dirname
@@ -12,7 +13,7 @@ glue.compose(manifest, options, (e, server) => {
 
 	server.views({
 		engines: {
-			hbs: require('handlebars')
+			hbs: handlebars
 		},
 		path: './',
 		layoutPath: './templates/layouts',
