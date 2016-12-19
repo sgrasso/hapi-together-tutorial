@@ -24,23 +24,10 @@ let internals = {
 		{
 			"plugin": "./apps/home",
 			"options":{}
-		},
-		{
-			"plugin": "./apps/brain",
-			"options":{
-				"routes": {
-					"prefix": "/brain"
-				}
-			}
-		},
-		{
-			"plugin": "./apps/pinky",
-			"options":{
-				"routes": {
-					"prefix": "/pinky"
-				}
-			}
 		}
+		/*
+			Add your new plugins here...
+		*/
 	]
 };
 
