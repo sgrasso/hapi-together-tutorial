@@ -2,6 +2,7 @@
 ##@dealertire
 
 The home plugin is done as a reference for you. (src/apps/home/)
+All exercise are to be done in the ```/src``` folder.
 
 ##1. Create first plugin
 
