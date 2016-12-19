@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const glue = require('glue');
 const manifest = require('./manifest.js');
@@ -15,7 +17,6 @@ glue.compose(manifest, options, (e, server) => {
 		path: './',
 		layoutPath: './templates/layouts',
 		partialsPath: './templates/partials',
-		helpersPath: './templates/helpers',
 		layout: 'main'
 	});
 
@@ -24,7 +25,7 @@ glue.compose(manifest, options, (e, server) => {
 		path: '/{assets*}',
 		handler: {
 			directory: {
-				path: 'public'
+				path: '../public'
 			}
 		}
 	});

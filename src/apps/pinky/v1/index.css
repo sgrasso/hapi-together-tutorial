@@ -1,0 +1,7 @@
+#header {
+	background-image: url("/images/pinky_and_the_brain.jpg");
+}
+#main .image.featured {
+	width: 400px;
+	margin-left: 36%;
+}

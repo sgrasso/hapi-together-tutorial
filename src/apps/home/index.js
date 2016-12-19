@@ -1,3 +1,5 @@
+'use strict';
+
 exports.register = (server, options, next) => {
  
 	server.route({
@@ -8,7 +10,7 @@ exports.register = (server, options, next) => {
 			let context = {
 				appName: 'Hapi @Dealertire',
 				pageTitle: 'Hapi.js Tutorial Workshop Home Page',
-				slogan: server.app.slogan
+				slogan: server.settings.app.slogan
 			};
 			
 			reply.view('apps/home/index', context);

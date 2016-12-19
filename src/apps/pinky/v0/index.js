@@ -1,10 +1,11 @@
+'use strict';
 
 module.exports = (request, reply) => {
 
 	let context = {
 		appName: 'Pinky',
-		version: 'v0',
-		pageTitle: 'Pinky Page V0',
+		version: 'V0',
+		pageTitle: 'Pinky',
 		slogan: 'Nrrrrrffffff!'
 	};
 	

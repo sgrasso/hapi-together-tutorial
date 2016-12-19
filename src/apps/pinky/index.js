@@ -4,26 +4,16 @@ const boom = require('boom');
 const path = require('path');
 
 exports.register = (server, options, next) => {
- 	server.route({
-		method: 'GET',
-		path: '/{assets*}',
-		handler: {
-			directory: {
-				path: 'public'
-			}
-		}
-	});
 	
 	server.route({
-		path: '/{path*}',
+		path: '/{version*}',
 		method: 'GET',
 		handler: (request, reply) => {
-			console.log(request.path)
+			let version = request.params.version || 'v0'
 			try {
-				return require(path.resolve(request.path))(request, reply, true);
+				return require(path.join(__dirname, version))(request, reply);
 			}
 			catch (e) {
-				console.log(e)
 				return boom.notFound();
 			}
 		}
