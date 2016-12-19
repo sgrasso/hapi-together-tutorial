@@ -1,0 +1,14 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "Brain Main Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Brain"
+  ],
+  "author": "Sean Grasso",
+  "license": "MIT"
+}
