@@ -28,7 +28,7 @@
     "boom": "4.2.0",
     "glue": "3.x.x",
     "handlebars": "1.x.x",
-    "hapi": "13.3.3",
+    "hapi": "13.x.x",
     "inert": "3.x.x",
     "vision": "4.1.0"
   },
