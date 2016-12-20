@@ -25,16 +25,16 @@
     "node": ">=4.0"
   },
   "dependencies": {
-    "boom": "^4.2.0",
+    "boom": "4.2.0",
     "glue": "3.x.x",
     "handlebars": "1.x.x",
-    "hapi": "^13.5.3",
+    "hapi": "13.3.3",
     "inert": "3.x.x",
-    "vision": "^4.1.0"
+    "vision": "4.1.0"
   },
   "devDependencies": {
-    "clean-css": "^3.4.12",
-    "npm-run-all": "^2.1.1",
+    "clean-css": "3.4.12",
+    "npm-run-all": "2.1.1",
     "uglify-js": "2.6.2"
   }
 }
