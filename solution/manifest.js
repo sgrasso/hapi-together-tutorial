@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 let internals = {
 	"server": {
 		"app": {
@@ -22,10 +20,10 @@ let internals = {
 			"plugin": "inert"
 		},
 		{
-			"plugin": "./apps/home"
+			"plugin": './apps/home'
 		},
 		{
-			"plugin": "./apps/example-1",
+			"plugin": './apps/example-1',
 			"options":{
 				"routes": {
 					"prefix": "/brain"
@@ -33,7 +31,7 @@ let internals = {
 			}
 		},
 		{
-			"plugin": "./apps/example-2",
+			"plugin": './apps/example-2',
 			"options":{
 				"routes": {
 					"prefix": "/pinky"
@@ -41,11 +39,11 @@ let internals = {
 			}
 		},
 		{
-			"plugin": "./apps/example-3"
+			"plugin": './apps/example-3'
 		}
 	]
 };
 
-internals.connections.push({port: process.env.PORT || 3500, labels: ["hapi tut"]});
+internals.connections.push({port: process.env.PORT || 5000, labels: ["hapi tut"]});
 
 module.exports = internals;

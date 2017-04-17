@@ -9,5 +9,5 @@ module.exports = (request, reply) => {
 		slogan: 'What are we going to do tonight Brain?!'
 	};
 	
-	reply.view('apps/pinky/v1/index', context);
+	reply.view('apps/example-2/v1/index', context);
 };

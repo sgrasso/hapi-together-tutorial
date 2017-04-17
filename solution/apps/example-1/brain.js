@@ -8,5 +8,5 @@ module.exports = (request, reply) => {
 		slogan: 'Same thing we do every night Pinky... Try and take over the world!'
 	};
 
-	reply.view('apps/brain/index', context);
+	reply.view('apps/example-1/index', context);
 };

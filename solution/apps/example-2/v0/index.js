@@ -9,5 +9,5 @@ module.exports = (request, reply) => {
 		slogan: 'Nrrrrrffffff!'
 	};
 	
-	reply.view('apps/pinky/v0/index', context);
+	reply.view('apps/example-2/v0/index', context);
 };
