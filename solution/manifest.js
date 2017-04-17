@@ -22,11 +22,10 @@ let internals = {
 			"plugin": "inert"
 		},
 		{
-			"plugin": "./apps/home",
-			"options":{}
+			"plugin": "./apps/home"
 		},
 		{
-			"plugin": "./apps/brain",
+			"plugin": "./apps/example-1",
 			"options":{
 				"routes": {
 					"prefix": "/brain"
@@ -34,12 +33,15 @@ let internals = {
 			}
 		},
 		{
-			"plugin": "./apps/pinky",
+			"plugin": "./apps/example-2",
 			"options":{
 				"routes": {
 					"prefix": "/pinky"
 				}
 			}
+		},
+		{
+			"plugin": "./apps/example-3"
 		}
 	]
 };

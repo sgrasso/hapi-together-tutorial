@@ -1,0 +1,15 @@
+{
+  "name": "example-2",
+  "version": "1.0.0",
+  "description": "Pinky Main Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Pinky",
+    "Nrrrrffff"
+  ],
+  "author": "Sean Grasso",
+  "license": "MIT"
+}

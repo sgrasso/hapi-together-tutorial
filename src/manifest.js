@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 let internals = {
 	"server": {
 		"app": {
@@ -26,11 +24,11 @@ let internals = {
 			"options":{}
 		}
 		/*
-			Add your new plugins here...
+			Add your new plugins and route prefixes here...
 		*/
 	]
 };
 
-internals.connections.push({port: process.env.PORT || 3500, labels: ["hapi tut"]});
+internals.connections.push({port: process.env.PORT || 3500, labels: ["hapi-together-tut"]});
 
 module.exports = internals;

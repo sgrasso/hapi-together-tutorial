@@ -1,40 +1,40 @@
 {
-  "name": "hapi-workshop-1",
+  "name": "hapi-together-tutorial",
   "version": "1.0.0",
-  "description": "Intermediate workshop on using Hapi.js plugins and glue.js as decoupled dependencies",
-  "main": "src/index.js",
+  "description": "Intermediate tutorial on using Hapi.js plugins and glue.js as decoupled dependencies",
+  "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "start": "node .",
-    "dev": "run-p watch-css watch-js watch-server",
-    "build": "run-p build-js build-css",
-    "build-js": "uglifyjs public/js/lib/*.js src/apps/**/client.js -v -o public/js/main.min.js",
-    "build-css": "cat public/css/font-awesome/css/font-awesome.css public/css/fontello/css/fontello.css public/css/lib/*.css public/css/styles.css | cleancss -o public/css/styles.min.css",
-    "watch-server": "nodemon --ignore public/ --ignore 'src/apps/**/client.js' -x npm start",
-    "watch-js": "nodemon -e js,jade -w public/js/lib -w 'src/apps/**/client.js' -x 'npm run build-js'",
-    "watch-css": "nodemon -e css -w public/css/styles.css -x 'npm run build-css'"
+    "start": "node ./src",
+    "dev": "npm-run-all watch:js watch:server",
+    "build": "npm run build:js",
+    "build:js": "bash -c 'uglifyjs src/apps/**/client.js -v -o ../public/assets/js/main.min.js'",
+    "watch:server": "nodemon --ignore public/ --ignore src/apps/**/client.js -x npm start",
+    "watch:js": "nodemon -e js -w src/apps/**/client.js"
   },
   "keywords": [
     "hapi",
+    "hapi-together",
     "tutorial",
     "dealertire"
   ],
   "author": "Sean Grasso",
   "license": "MIT",
-  "engines": {
-    "node": ">=4.0"
-  },
   "dependencies": {
     "boom": "4.2.0",
     "glue": "3.x.x",
     "handlebars": "1.x.x",
     "hapi": "13.x.x",
     "inert": "3.x.x",
+    "tweet-to-html": "1.0.2",
+    "twitter": "1.4.0",
     "vision": "4.1.0"
   },
   "devDependencies": {
-    "clean-css": "3.4.12",
     "npm-run-all": "2.1.1",
     "uglify-js": "2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgrasso/hapi-together-tutorial.git"
   }
 }

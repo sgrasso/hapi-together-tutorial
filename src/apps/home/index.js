@@ -8,11 +8,18 @@ exports.register = (server, options, next) => {
 		handler: (request, reply) => {
 
 			let context = {
-				appName: 'Hapi @Dealertire',
-				pageTitle: 'Hapi.js Tutorial Workshop Home Page',
+				appName: 'Hapi-Together @Dealertire',
+				pageTitle: 'Hapi-Together - Home Page',
 				slogan: server.settings.app.slogan
+				/* Example-3 - Put Code Here */
 			};
 			
+			/* 
+
+			Example-3 - Put Code Here 
+
+			*/
+
 			reply.view('apps/home/index', context);
 		}
 	});
