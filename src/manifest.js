@@ -29,6 +29,6 @@ let internals = {
 	]
 };
 
-internals.connections.push({port: process.env.PORT || 3500, labels: ["hapi-together-tut"]});
+internals.connections.push({port: process.env.PORT || 5001, labels: ["hapi-together-tut"]});
 
 module.exports = internals;

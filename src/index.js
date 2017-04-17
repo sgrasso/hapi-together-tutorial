@@ -1,11 +1,9 @@
 'use strict';
 
-const working_dir = 'solution';
-
 const path = require('path');
 const glue = require('glue');
 const handlebars = require('handlebars');
-const manifest = require(path.join(working_dir, 'manifest.js'));
+const manifest = require('./manifest.js');
 const options = {
 	relativeTo: __dirname
 };
@@ -17,9 +15,9 @@ glue.compose(manifest, options, (e, server) => {
 		engines: {
 			hbs: handlebars
 		},
-		path: './',
-		layoutPath: path.join(working_dir, 'templates/layouts'),
-		partialsPath: path.join(working_dir, 'templates/partials'),
+		path: __dirname,
+		layoutPath: path.join(__dirname, 'templates/layouts'),
+		partialsPath: path.join(__dirname, 'templates/partials'),
 		layout: 'main'
 	});
 
@@ -28,7 +26,7 @@ glue.compose(manifest, options, (e, server) => {
 		path: '/{assets*}',
 		handler: {
 			directory: {
-				path: './public'
+				path: path.join(__dirname, '../public')
 			}
 		}
 	});

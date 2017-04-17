@@ -3,10 +3,10 @@
 const Twitter = require('twitter');
 const tweetToHTML = require('tweet-to-html');
 const credentials = {
-	"consumer_key": "8jRdW2atXziHvudGnkkymvi6I",
-	"consumer_secret": "h7qZWpzOj59JSSrKY3demY31GUjj8dwEXKZ08Vk7oFWqykOKAM",
-	"access_token_key": "334411907-Or3NzaSCVu2KxhqA9dEN8bDcJOudvTPxO0UeyedN",
-	"access_token_secret": "0Nszelq6h4QKQ97ZOnRUldNxK8jPAtCDewHjQaCAU4zNR"
+	"consumer_key": "ar1tj7LNE636RxuriFhW1IF0a",
+	"consumer_secret": "jkKFKUo1UtE00dKl6a0rWBOAdd7QhV28huVuwuxSIT9SjvpwmI",
+	"access_token_key": "334411907-3jaehwtcdMkS4WzXCdINAbVkH1vu9I29iqQOE7I7",
+	"access_token_secret": "GDhWBiKYB1XnYpS53Hk6sfEp6l0kZVOruAnuBJdVmBTcK"
 };
 
 const twitterApi = (screen_name, done) => {
