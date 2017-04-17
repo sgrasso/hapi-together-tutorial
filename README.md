@@ -5,6 +5,8 @@ This tutorial aims to provide an introduction to using Hapi.js plugins in a modu
 Hapi modules like Glue and Rejoice allow us to run a server completely through configuration.
 This works well in the micro container world.
 
+#### JS User Group Presentation Slides: http://bit.ly/2onH3HD
+
 ## Tutorial Objectives
 
 - Understand how to decouple individual pieces of application logic and manage them as typical dependencies possibly with a Private or Public NPM repository. 
