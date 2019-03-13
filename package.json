@@ -1,11 +1,11 @@
 {
   "name": "hapi-together-tutorial",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Intermediate tutorial on using Hapi.js plugins and glue.js as decoupled dependencies",
   "main": "src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "build": "bash -c 'uglifyjs src/apps/**/client.js -v -o ../public/assets/js/main.min.js'"
+    "build": "bash -c 'uglifyjs ./src/apps/home/client.js ./src/apps/example-1/client.js ./src/apps/example-2/v0/client.js ./src/apps/example-2/v1/client.js -v -o ./public/assets/js/main.min.js'"
   },
   "keywords": [
     "hapi",
@@ -16,18 +16,18 @@
   "author": "Sean Grasso",
   "license": "MIT",
   "dependencies": {
-    "boom": "4.2.0",
-    "glue": "3.x.x",
-    "handlebars": "1.x.x",
-    "hapi": "13.x.x",
+    "boom": "^5.2.0",
+    "glue": "4.x.x",
+    "handlebars": "4.x.x",
+    "hapi": "16.x.x",
     "inert": "3.x.x",
-    "tweet-to-html": "1.0.2",
-    "twitter": "1.4.0",
-    "vision": "4.1.0"
+    "tweet-to-html": "^1.0.2",
+    "twitter": "^1.7.1",
+    "vision": "^4.1.1"
   },
   "devDependencies": {
-    "npm-run-all": "2.1.1",
-    "uglify-js": "2.6.2"
+    "npm-run-all": "^2.3.0",
+    "uglify-js": "^2.8.29"
   },
   "repository": {
     "type": "git",
